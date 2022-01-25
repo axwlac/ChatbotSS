@@ -1,7 +1,7 @@
-from mimetypes import init
 from sentence_transformers import SentenceTransformer
 import torch
 import numpy as np
+
 
 '''
 Para usar es necesario tener instalado pytorch, transformers y Sentence-Transformers
