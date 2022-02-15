@@ -43,7 +43,7 @@ d = (0, 1e9)
 for i in range(embeddings.shape[0]):
     t = distance(embeddings[i], query[0])
     if t<d[1]:
-        d = (i+1, t)
+        d = (i, t)
     print("Distancia entre la oración " + str(i+1) + " y la consulta: " + str(t))
     
 print("La oración con distancia más corta con la consulta es :\n" + str(sentences[d[0]]) + "\nCon  distancia: " + str(d[1]))

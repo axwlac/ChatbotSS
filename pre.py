@@ -19,6 +19,7 @@ with open('categoriasV1.json', 'r', encoding="utf-8") as file:
     data = json.load(file)
     # Tratamiento de oraciones
     l = len(data)
+    # l = 3
     sentences = []
     for i in range(l):
         sentences.append(ToString(i).strip('\n'))
